@@ -2,41 +2,47 @@ document.querySelector("body").addEventListener("keypress", (ev) => {
   console.log(ev.key);
 
   if (ev.key === "w") {
-    console.log("clap");
+    playAudio("clap");
   }
 
   if (ev.key === "s") {
-    console.log("hihat");
+    playAudio("hihat");
   }
 
   if (ev.key === "d") {
-    console.log("kick");
+    playAudio("kick");
   }
 
   if (ev.key === "f") {
-    console.log("openhat");
+    playAudio("openhat");
   }
 
   if (ev.key === "g") {
-    console.log("boom");
+    playAudio("boom");
   }
 
   if (ev.key === "h") {
-    console.log("ride");
+    playAudio("ride");
   }
 
   if (ev.key === "j") {
-    console.log("snare");
+    playAudio("snare");
   }
 
   if (ev.key === "k") {
-    console.log("tom");
+    playAudio("tom");
   }
 
   if (ev.key === "l") {
-    console.log("tink");
+    playAudio("tink");
   }
 });
+
+function playAudio(file) {
+  const url = `audio/${file}.mp3`;
+  var audio = new Audio(url);
+  audio.play();
+}
 
 /* let els = document.querySelectorAll(".instrument");
 els.forEach(function (el) {
@@ -48,10 +54,7 @@ els.forEach(function (el) {
 });
  */
 
-let container = document.querySelector(".container");
-container.addEventListener("click", function (ev) {
-  console.log(ev.target.id);
-  const url = `audio/${ev.target.id}.mp3`;
-  var audio = new Audio(url);
-  audio.play();
+let containerEl = document.querySelector(".container");
+containerEl.addEventListener("click", function (ev) {
+  playAudio(ev.target.id);
 });
