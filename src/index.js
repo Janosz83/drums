@@ -1,3 +1,11 @@
+let containerEl = document.querySelector(".container");
+
+/* let mydiv = document.createElement("div");
+mydiv.innerHTML = "xxxxxx";
+containerEl.appendChild(mydiv); */
+
+const key = "DRUMSwalkthrough";
+
 document.querySelector("body").addEventListener("keypress", (ev) => {
   console.log(ev.key);
 
@@ -54,7 +62,6 @@ els.forEach(function (el) {
 });
  */
 
-let containerEl = document.querySelector(".container");
 containerEl.addEventListener("click", function (ev) {
   playAudio(ev.target.id);
 });
