@@ -9,8 +9,9 @@ Wykorzystane technologie:
 - Bootstrap
 - JS
 
-Projekt uruchamiamy poleceniem
+W projekcie instalujemy zależności u uruchamiamy poniższym poleceniem
 
 ```sh
+npm i
 npm start
 ```
