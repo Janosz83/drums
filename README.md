@@ -3,12 +3,14 @@
 ## Projekt na zaliczenie JS
 
 Wykorzystane technologie:
-* HTML5
-* CSS3
-* Bootstrap
-* JS
 
+- HTML5
+- CSS3
+- Bootstrap
+- JS
 
-```javascript
-x
+Projekt uruchamiamy poleceniem
+
+```sh
+npm start
 ```
