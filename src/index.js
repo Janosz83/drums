@@ -62,6 +62,12 @@ els.forEach(function (el) {
 });
  */
 
-containerEl.addEventListener("click", function (ev) {
+const clapEl = containerEl.querySelector("#clap");
+clapEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+const hihatEl = containerEl.querySelector("#hihat");
+hihatEl.addEventListener("click", (ev) => {
   playAudio(ev.target.id);
 });
