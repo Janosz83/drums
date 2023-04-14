@@ -52,16 +52,6 @@ function playAudio(file) {
   audio.play();
 }
 
-/* let els = document.querySelectorAll(".instrument");
-els.forEach(function (el) {
-  console.log(el);
-  el.addEventListener("click", function (ev) {
-    // odtwarzamy audio takie jak id
-    console.log("x", el.id);
-  });
-});
- */
-
 const clapEl = containerEl.querySelector("#clap");
 clapEl.addEventListener("click", (ev) => {
   playAudio(ev.target.id);
