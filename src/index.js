@@ -1,14 +1,22 @@
-let containerEl = document.querySelector(".container");
+const bodyEl = document.querySelector("body");
+const containerEl = bodyEl.querySelector(".container");
+const clapEl = containerEl.querySelector("#clap");
+const hihatEl = containerEl.querySelector("#hihat");
+const kickEl = containerEl.querySelector("#kick");
+const openhatEl = containerEl.querySelector("#openhat");
+const boomEl = containerEl.querySelector("#boom");
+const rideEl = containerEl.querySelector("#ride");
+const snareEl = containerEl.querySelector("#snare");
+const tomEl = containerEl.querySelector("#tom");
+const tinkEl = containerEl.querySelector("#tink");
 
-/* let mydiv = document.createElement("div");
-mydiv.innerHTML = "xxxxxx";
-containerEl.appendChild(mydiv); */
+function playAudio(file) {
+  const url = `audio/${file}.mp3`;
+  const audio = new Audio(url);
+  audio.play();
+}
 
-const key = "DRUMSwalkthrough";
-
-document.querySelector("body").addEventListener("keypress", (ev) => {
-  console.log(ev.key);
-
+bodyEl.addEventListener("keypress", (ev) => {
   if (ev.key === "w") {
     playAudio("clap");
   }
@@ -46,18 +54,37 @@ document.querySelector("body").addEventListener("keypress", (ev) => {
   }
 });
 
-function playAudio(file) {
-  const url = `audio/${file}.mp3`;
-  var audio = new Audio(url);
-  audio.play();
-}
-
-const clapEl = containerEl.querySelector("#clap");
 clapEl.addEventListener("click", (ev) => {
   playAudio(ev.target.id);
 });
 
-const hihatEl = containerEl.querySelector("#hihat");
 hihatEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+kickEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+openhatEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+boomEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+rideEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+snareEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+tomEl.addEventListener("click", (ev) => {
+  playAudio(ev.target.id);
+});
+
+tinkEl.addEventListener("click", (ev) => {
   playAudio(ev.target.id);
 });
