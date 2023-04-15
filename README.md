@@ -6,10 +6,9 @@ Wykorzystane technologie:
 
 - HTML5
 - CSS3
-- Bootstrap
 - JS
 
-W projekcie instalujemy zależności u uruchamiamy poniższym poleceniem
+W projekcie instalujemy zależności i uruchamiamy poniższym poleceniem
 
 ```sh
 npm i

@@ -1,15 +1,14 @@
 {
-  "name": "drumswalkthrough",
+  "name": "drumkit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projekt na zaliczenie",
   "main": "index.js",
   "scripts": {
     "start": "cd src && live-server"
   },
-  "author": "",
+  "author": "Janos Sultis",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "live-server": "^1.2.2"
   },
   "devDependencies": {
